@@ -3,7 +3,7 @@
 namespace Rain.NUnitConstraint.Base
 {
     [TestFixture]
-    public class BaseConstraintReveal
+    public class EqualConstraint
     {
         [Test]
         public void Should_simply_assert_string()
