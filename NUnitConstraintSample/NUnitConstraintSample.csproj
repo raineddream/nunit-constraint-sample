@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\ComparisonConstraint.cs" />
     <Compile Include="Base\ConditionConstraint.cs" />
     <Compile Include="Base\EqualConstraint.cs" />
     <Compile Include="Base\SameConstraint.cs" />
