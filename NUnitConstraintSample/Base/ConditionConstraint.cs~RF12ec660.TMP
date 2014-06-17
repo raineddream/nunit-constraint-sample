@@ -105,24 +105,6 @@ namespace Rain.NUnitConstraint.Base
             AssertUnique(list);
         }
 
-        [Test]
-        public void should_compound_condition_1()
-        {
-            // CONSTRAINT
-            Assert.That(2.3, Is.GreaterThan(2.0) & Is.LessThan(3.0));
-
-            // BASIC
-            double a = 2.3;
-            Assert.IsTrue(a > 2.0 && a < 3.0);
-        }
-
-        [Test]
-        public void should_compound_condition_2()
-        {
-            // CONSTRAINT
-            Assert.That(3, Is.LessThan(5) | Is.GreaterThan(10));
-        }
-
         private void AssertUnique(IList<object> list)
         {
             var keys = new HashSet<object>();
