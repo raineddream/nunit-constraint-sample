@@ -113,12 +113,9 @@ namespace Rain.NUnitConstraint.Base
 
         private void AssertArrayNull<T>(T[] array)
         {
-            foreach (T item in array)
+            foreach (T item in array.Where(item => item == null))
             {
-                if (item == null)
-                {
-                    Assert.Fail();
-                }
+                Assert.Fail();
             }
         }
     }
